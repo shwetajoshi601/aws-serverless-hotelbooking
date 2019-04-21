@@ -1,0 +1,2 @@
+# aws-serverless-hotelbooking
+This is an extension to the Angular web application for a Hotel Booking System. This application is built using Angular 4 and would be using AWS serverless computing - AWS Lambda and Dynamo DB. We will host this application as a static website on Amazon S3. Authentication will be supported using AWS Cognito. This application will help you understand the basics of AWS services and building serverless applications on AWS.
