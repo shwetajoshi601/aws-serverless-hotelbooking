@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="emptydiv"></div>
+<app-searchfilter (clicked)="onClicked($event)" (sortByChanged)="onSortByChanged($event)" (sortOptionChanged)="onSortOptionChanged($event)" (filterChanged)="onFilterChanged($event)" (hotelTypeChanged)="onHotelTypeChanged($event)" (minPriceChanged)="onMinPriceChanged($event)" (maxPriceChanged)="onMaxPriceChanged($event)"></app-searchfilter>
+<div *ngIf=hotels.length>
+<div class="container">
+   <div *ngFor="let hotel of pagedItems">
+      <div class="col-md-12 hoteldiv">
+         <div #id id="id imagediv" class="col-md-4">
+            <img src="../../assets/images/hotels/{{hotel.id}}/main1.jpg" style="height: 200px;
+               width: 250px;">&nbsp;&nbsp;
+         </div>
+         <div class="hotelname col-md-4">
+            <h3>{{hotel.name}}</h3>
+            <h5 style="font-size: 15px; color:grey;">{{hotel.type}}</h5>
+            <!--
+               <div class="star-rating">
+                   <div class="back-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                   <div class="front-stars" [style.width.%]="calculatePercentRating(hotel.rating)"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+               </div>
+               -->
+            <!--
+               <star-rating-comp [starType]="'svg'" [size]="'small'"  [staticColor]="'ok'" [rating]="calculateAvgRating(hotel.rating)" [readOnly]="true"></star-rating-comp>
+               -->
+            <div class="rating rounded">
+               {{hotel.rating | calculateAvg}}
+            </div>
+         </div>
+         &nbsp;&nbsp;
+         <div class="col-md-4" style="text-align:center;">
+            <label id="room">Rooms starting at </label>
+            <p id="price">{{getMinimumPrice(hotel.room_types) | currency:'INR':true}}</p>
+            <hr style="width:50%;">
+            <div><button class="btn btn-success btn-lg" (click)="loadHotelDetails(hotel);">View Details</button></div>
+         </div>
+      </div>
+   </div>
+   <ul *ngIf="pager.pages && pager.pages.length" class="pagination" style="margin-left:35%;">
+    <li [ngClass]="{disabled:pager.currentPage === 1}">
+       <a (click)="setPage(1)">First</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === 1}">
+       <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+    </li>
+    <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+    <a (click)="setPage(page)">{{page}}</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+       <a (click)="setPage(pager.currentPage + 1)">Next</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+       <a (click)="setPage(pager.totalPages)">Last</a>
+    </li>
+ </ul>
+</div>
+<div *ngIf="filteredHotels.length===0" class="container">
+   <h3>No results found for your Search</h3>
+</div>
+<div class="container" style="background:#293339; margin-bottom:5%;">
+   <h4 style="color:whitesmoke">Want to receive exclusive hotel offers? Subscribe to our newsletter!</h4>
+</div>

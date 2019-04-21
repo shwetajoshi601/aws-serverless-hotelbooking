@@ -1,0 +1,86 @@
+.container {
+    margin-top: 5%;
+}   
+
+.imagediv {
+    position: relative;
+    display: flex;
+    padding : 1%;
+}
+
+image{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#id{
+    height: 180px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.hotelname {
+    position: initial;
+    display: inline-block;
+    color: #4d4d4d;
+    text-decoration-style: solid;
+    font-size: 20px;
+    /* left: 30%; */
+}
+
+.rating {
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    height:25px;
+    width: 40px;
+    background-color: #009900;
+    text-decoration-style: solid;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#room {
+    font-size: 15px;
+    color: midnightblue;
+}
+
+#price {
+    font-size: 20px;
+    color: red;
+    
+}
+
+.star-rating {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 20px;
+    height: 20px;
+    width: 250px;
+    margin: 1em auto;
+    position: relative;
+    padding: 0;
+}
+
+.back-stars {
+    z-index: 0;
+}
+
+.front-stars {
+    color: gold;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display:block;
+    left: 0px;
+    overflow: hidden;
+}
+
+
+.hoteldiv {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

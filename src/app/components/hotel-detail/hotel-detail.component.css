@@ -1,0 +1,76 @@
+.maindiv {
+    margin-top: 50px;
+}
+
+.addrcon {
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.titles {
+    font-size: 17px;
+    color: #191970;
+    font-weight: bold;
+}
+
+.detail {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.divStyle{
+	padding:10px;
+	background-color: #2e5cb8;
+	min-height: 100px;
+	margin-bottom: 20px;
+	font-size:12px;
+	text-align:center;
+}
+
+.roomdiv {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.roomdetails {
+    margin-top: 25px;
+    font-size: 12px;
+    color:  #191970;
+    text-align: justify;
+}
+
+.rate {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    height:40px;
+    width: 130px;
+    padding: 10px;
+    background-color: #009900;
+    text-decoration-style: solid;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.noofrooms {
+    width: 10px;
+    height: 10px;
+}
+
+.lastdiv {
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.nopeople {
+    width: 50px;
+    margin: 10px;
+}

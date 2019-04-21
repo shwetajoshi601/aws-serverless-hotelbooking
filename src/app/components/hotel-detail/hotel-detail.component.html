@@ -1,0 +1,107 @@
+<div class="container maindiv">
+    <h3 style="color:dimgray; margin-bottom:20px; text-align:center;"> {{hotelDetails.name}} </h3>
+    <div class="row">
+       <div class="col-md-4"><img src="../../assets/images/hotels/{{selectedHotelID}}/main2.jpg" style="height: 200px; width: 300px;"></div>
+       <div class="col-md-8 addrcon">
+          <table style="padding:20px;">
+             <tr>
+                <td class="titles">Address : </td>
+                <td class="detail"> {{hotelDetails.address.detail}}</td>
+             </tr>
+             <tr>
+                <td class="titles">City : </td>
+                <td class="detail"> {{hotelDetails.address.city}}</td>
+             </tr>
+             <tr>
+                <td class="titles">State : </td>
+                <td class="detail"> {{hotelDetails.address.state}}</td>
+             </tr>
+             <tr>
+                <td class="titles">Zipcode : </td>
+                <td class="detail"> {{hotelDetails.address.zipcode}}</td>
+             </tr>
+             <tr>
+                <hr>
+             </tr>
+             <tr>
+                <td class="titles">Contact : </td>
+                <td class="detail"> {{hotelDetails.contact}}</td>
+             </tr>
+             <tr>
+                <td class="titles">E-mail : </td>
+                <td class="detail"> {{hotelDetails.email}}</td>
+             </tr>
+             <tr>
+                <td class="titles">Website : </td>
+                <td class="detail"><a href="{{hotelDetails.website}}">{{hotelDetails.website}}</a></td>
+             </tr>
+          </table>
+       </div>
+    </div>
+    <div class="row" style="margin-top:30px;">
+       <div class="col-md-6">
+          <h4 style="text-align:center">About {{hotelDetails.name}}</h4>
+          <p style="color:dimgray; font-size:15px; text-align:justify;"> {{hotelDetails.description}}</p>
+       </div>
+       <div class="col-md-6">
+          <h4 style="text-align:center">View Location on Map</h4>
+          <div #gmap style="width:100%;height:250px"></div>
+       </div>
+    </div>
+    <div class="container">
+       <div class="row">
+          <div class="col-md-4">
+             <mat-form-field>
+                <h4>Check-in :</h4>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="checkInDate">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+             </mat-form-field>
+          </div>
+          <div class="col-md-4">
+             <mat-form-field>
+                <h4>Check-out :</h4>
+                <input matInput [matDatepicker]="picker2" [(ngModel)]="checkOutDate">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+             </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+             <h4>Adults: <input type="number" min="0" class="input-xs nopeople" [(ngModel)]="adults"> 
+                Children: <input type="number" min="0" class="input-xs nopeople" [(ngModel)]="children">
+             </h4>
+            </div>
+            <div class="row">
+              <button class="btn btn-success btn-md" (click)="loadBookingDetail();">Proceed to Checkout</button>
+            </div>
+          </div>
+       </div>
+    </div>
+    <h3 style="color:dimgray; margin-bottom:20px; text-align:left;"> Select your Rooms: </h3>
+    <div class="row">
+       <div class="col-md-12 roomdiv" *ngFor="let room of room_types; let i=index;">
+          <div class="col-md-4">
+             <h4 style="color:dimgray; margin-bottom:10px; text-align:left;">{{room}}</h4>
+             <img src="../../assets/images/hotels/{{selectedHotelID}}/{{room}}.jpg" style="height: 200px;
+                width: 250px;">
+          </div>
+          <div class="col-md-4">
+             <h2 style="font-size:15px; color:#3862e0; font-weight: bold;">Details : </h2>
+             <hr>
+             <p class="roomdetails">{{hotelDetails.room_types[room][0]}}</p>
+             <div class="rate">{{hotelDetails.room_types[room][1] | currency :'INR':true}}/night</div>
+          </div>
+          <div class="col-md-4 lastdiv">
+             <div class="row">
+                <div class="col-md-3"><button class="btn btn-sm" (click)="decrementRoomNo(i);"><span class="glyphicon glyphicon-minus"></span></button></div>
+                <div class="col-md-3">{{noofrooms[i]}}</div>
+                <div class="col-md-3"><button class="btn btn-sm" (click)="incrementRoomNo(i);"><span class="glyphicon glyphicon-plus"></span></button></div>
+             </div>
+             <div class="row">
+               <div class="col-mg-12"><h4 style="color:blue;"> Price - {{ room_prices[i]}}</h4></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>

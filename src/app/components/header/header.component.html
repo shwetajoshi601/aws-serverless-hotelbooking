@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+	<nav class="nav nav-justified nav-tabs" role="navigation">
+		<div class="navbar-header navbar-inverse">
+			<a href="" class="navbar-brand label-primary" style="color:floralwhite">HoTeL4U</a>
+			<button type="button" data-target="#myBar" class="navbar-toggle" data-toggle="collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div> 
+	
+	<div id="myBar" class="collapse navbar-collapse">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href=""><span class="glyphicon glyphicon-home"></span>Home</a></li>
+		<li><a routerLink="/about"><span class="glyphicon glyphicon-user"></span>About Us</a></li>
+		<li class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle">
+		<span class="glyphicon glyphicon-earphone"></span>Contact<b class="caret"></b></a>
+			<ul role="menu" class="dropdown-menu">
+				<li><a routerLink="">Details</a></li>
+				<li class="divider"></li>
+				<li><a routerLink="">Bookings</a></li>
+				<li><a routerLink="/feedback">FeedBack</a></li>
+			</ul>
+		</li>
+		<li><a href=""><span class="glyphicon glyphicon-question-sign"></span>FAQs</a></li>
+	</ul>	
+	<ul class="nav navbar-nav navbar-right">
+		<li><a *ngIf="!isLoggedIn()" routerLink="/register">Register</a></li>
+		<li><a *ngIf="!isLoggedIn()" routerLink="/login">Login</a></li>
+		<li><a *ngIf="isLoggedIn()" (click)="logoutUser()">Logout</a></li>
+	</ul>
+	</div>
+</nav>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,147 @@
+[
+    {
+        "id": "01",
+        "name":"Conrad Pune - Luxury by Hilton",
+        "address":{
+            "detail":"7 Mangaldas Road, Near Wadia College, Koregaon Park, Opp To Metro House",
+            "city":"Pune",
+            "state":"Maharashtra",
+            "zipcode" : "411001"
+        },
+        "description":"Location: Located in the heart of Pune's dynamic central business district, Conrad Pune is an iconic structure. The hotel is 3 km from Pune Railway Station and a 20-min drive from the Pune Airport. Nearby tourist attractions include Shaniwar Wada Palace (4 km) and Aga Khan Palace (5 km). Room Amenities: Conrad Pune offers modern guest rooms and suites. All the rooms include an HDTV, espresso machine, minibar, iron/ironing board, individually controlled air-conditioning, and a gleaming marble bathroom with walk-in rain shower. Hotel Facilities: Events can be organized in the hotel for up to 1200 people. There is a luxury spa, hair salon, fitness centre, concierge, 24-hour business centre, babysitting services and 24-hour room service. Dining:Coriander Kitchen (multi-cuisine), Zeera (grilled dishes and seafood), Koji (Asian), Masu (cocktail bar), Pune Sugar Box (24-hour bakery), Kabana (pool bar) and The Executive Lounge.",
+        "website":"http://conradhotels3.hilton.com/en/hotels/india/conrad-pune-PNQCICI/index.html",
+        "contact":"+91-20-67456745",
+        "email":"ConradPune.info@conradhotels.com",
+        "type":"5-star",
+        "rating": {
+            "food": 4,
+            "rooms": 5,
+            "service": 4,
+            "facilities" : 4,
+            "cleanliness" : 5,
+            "value_for_money" : 5
+        },
+        "room_types" : {
+	        "Deluxe Room - 2 Queen Beds" : ["452 square feet, 2 Queen Beds (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast included.", 8499],
+	        "Deluxe Room" : ["452 square feet, 1 King Bed (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children)Free Parking, Breakfast included, Internet Available",7649],
+            "Premiere Room" : ["452 square feet, 2 Queen Beds (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Free Parking, Breakfast included", 9349],
+            "Executive Room" : [" Business Lounge Access, 452 square feet, 2 Queen Beds (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included.",10199],
+            "King, Deluxe Suite" :["883 square feet, 1 King Bed (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Free Parking, Breakfast included", 22524]
+        }
+    },
+    {
+        "id": "02",
+        "name":"Four Points By Sheraton",
+        "address":{
+            "detail":"5th Mile Stone, Nagar Road, Viman Nagar",
+            "city":"Pune",
+            "state":"Maharashtra",
+            "zipcode" : "411014"
+        },
+        "description":"This upscale, modern hotel is the definition of splendour and sophistication. Four Points By Sheraton provides the highest level of professional hospitality, and includes top-class facilities such as a luxurious spa and outdoor pool. Whether in a room or suite, luxurious features such as rainforest showers, plush bathrobes, and Four Comfort Beds are standard. Additional amenities include the daily newspaper and bottled water. Corporate guests have the opportunity to host meetings or seminars in one of seven high-tech venues. The gym provides a chance to work up a sweat and burn off the stress of the day. Visitors can dine all day at Four Points By Sheraton: Pan-Asian cuisine at Panash, Mediterranean at the open-air Alfresco Beyond The Eatery, and cuisine from around the world at The Eatery. The Best Brew Pub serves ice-cold drinks.One of the biggest landmarks in Indian history, Aga Khan Palace, is about three kilometres from the hotel, and shopping at Phoenix Market City is about two kilometres away.",
+        "website":"http://www.starwoodhotels.com/fourpoints/property/overview/index.html?propertyID=3572&language=en_US",
+        "contact":"+91-20-39406699",
+        "email":"reservations@punefourpoints.com",
+        "type":"5-star",
+        "rating": {
+            "food": 4.5,
+            "rooms": 3,
+            "service": 4,
+            "facilities" : 3,
+            "cleanliness" : 5,
+            "value_for_money" : 3.5
+        },
+        "room_types" : {
+            "Comfort Room" : ["301 square feet, 1 King Bed or 2 Single Beds (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included, Free Internet", 5850],
+            "Studio Apartment" : ["450 square feet, 1 King Bed (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included, Free Internet", 7000],
+            "One bedroom Apartment" : ["549 square feet, 1 King Bed (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included, Pay at property available", 8000],
+            "Business Room" : ["Room with view, 301 square feet, 1 King Bed or 2 Queen Beds (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included", 9000],
+            "Executive Suite" : ["Room with view, 549 square feet, 1 King Bed (Extra beds available: Crib), Room sleeps 3 guests (up to 2 children), Breakfast Included, Free Parking, Internet", 11250]
+        }
+    },
+    {
+        "id": "03",
+        "name":"Crowne Plaza Pune City Centre",
+        "address":{
+            "detail":"C.TS. No. 37 & 37/1, Bund Garden Road, Next to Jehangir Hospital",
+            "city":"Pune",
+            "state":"Maharashtra",
+            "zipcode" : "411011"
+        },
+        "description":"Crowne Plaza Pune City Centre boasts a city-central location near the Pune Railway Station and the Lohegaon airport. The property provides a modern, 24-hour gym and rooftop swimming pool, and is also home to Evviva, a rooftop Indian restaurant and lounge. Modernly equipped and elegantly styled, all rooms offer stunning city views through floor-to-ceiling windows. Standard amenities include a spacious work desk, LCD TV, minibar, coffee/tea facilities and a telephone. Corporate travellers will appreciate a 24-hour business centre, property-wide Wi-Fi, and complimentary self-parking. For convenience, laundry and concierge services are offered at the 24-hour front desk. Guests may enjoy all-day dining, with buffet and a la carte options, at the Mosaic Restaurant, which serves a multi-cuisine menu. Sweet treats are available throughout the day at Mosaic Bakery. Crowne Plaza Pune City Centre is only a ten-minute walk from Matoshree Ramadai Bhimrao Ambadkar Udyan, a lovely park with gardens, walking trails, yoga classes and a playground. For shopping, guests should visit SGS Mall, two kilometres away.",
+        "website":"https://www.ihg.com/crowneplaza/hotels/us/en/pune/pnqcc/hoteldetail",
+        "contact":"+91-124-455-1212",
+        "email":"reservations@crowneplazapune.com",
+        "type":"3-star",
+        "rating": {
+            "food": 3.5,
+            "rooms": 3.5,
+            "service": 4.2,
+            "facilities" : 4,
+            "cleanliness" : 4,
+            "value_for_money" : 4.5
+        },
+        "room_types" : {
+            "1 King Deluxe":["1 King Bed, City View,336 Sq.Ft., Breakfast Included",6108],
+            "Deluxe" : ["Two Single Beds, City View, 336 Sq. Ft., Breakfast Included", 6108],
+            "1 King Club":["1 King Bed, City View, Bath-tub, Extra Single Bed, Breakfast Included", 8101]
+        }
+    },
+    {
+        "id": "04",
+        "name":"Ibis Pune",
+        "address":{
+            "detail":"Survey 32 Nagar Road",
+            "city":"Pune",
+            "state":"Maharashtra",
+            "zipcode" : "411014"
+        },
+        "description":"The ibis Pune is a contemporary hotel option that features a fitness centre, on-site restaurant and 24-hour front desk. Situated in Pune's Viman Nagar neighbourhood, the accommodation is less than ten minutes away on foot from the popular Phoenix Market City shopping centre. The air-conditioned rooms at the ibis Pune all contain a satellite television, work desk and tea/coffee-making facilities. The private bathrooms supply a shower and hairdryer. Wi-Fi access and private off-street parking are both supplied free of charge. Additional facilities include laundry and luggage storage services. A hearty continental breakfast buffet is available throughout each morning. Later in the day, guests can enjoy an international menu at the hotel's Spice It restaurant, while a dedicated bar offers the opportunity to sample a refreshing beverage. The historic Aga Khan Palace is a little over two kilometres away from the accommodation. Pune Airport is conveniently just a three-and-a-half kilometre drive away.",
+        "website":"https://www.accorhotels.com/gb/hotel-6543-ibis-pune-viman-nagar/index.shtml",
+        "contact":"020-4018-4018",
+        "email":"h6543-re@accor.com",
+        "type":"4-star",
+        "rating": {
+            "food": 3,
+            "rooms": 3,
+            "service": 4,
+            "facilities" : 4,
+            "cleanliness" : 4,
+            "value_for_money" : 3.5
+        },
+        "room_types" : {
+            "Deluxe Twin Room":["Room with view, 190 square feet, 2 Single Beds, Room sleeps 3 guests (up to 1 child), Pay at property available, Breakfast Included, Free Parking, Free Internet", 4699],
+            "Standard Queen Room":["190 square feet, 1 Queen Bed, Room sleeps 3 guests (up to 1 child), Breakfast Included", 4699],
+            "Standard Queen Room with Extra Benefits" : ["17.5 square feet, 1 Queen Bed, Room sleeps 3 guests (up to 1 child), Breakfast Included, Free Parking, Free Internet, Free One Way Airport Transfer",5198]
+        }
+    },
+    {
+        "id": "05",
+        "name":"Hard Rock Hotel Goa",
+        "address":{
+            "detail":"370/14, Porba Vaddo, Calangute, Bardez",
+            "city":"Goa",
+            "state":"Maharashtra",
+            "zipcode" : "403516"
+        },
+        "description":"Formally known as the North 16 Goa, the Hard Rock Hotel Goa offers some of Goa’s most stylish and trendy accommodation with resort-style amenities just minutes from the famous beaches. The spacious rooms have that sleek and modern international feel, but with some bold use of colour. Each features air conditioning, minibar, LCD TV, in-room safe, work desk and telephone. The outdoor pool terrace is the central attraction at Hard Rock Goa, and features the brand’s signature live performances and other entertainment. There is also a wellness area with a full spa and gym. Sessions is the main buffet restaurant and serves international favourites for all three meals, while the Poolside Bar and Grille is the place to be for the casual atmosphere, drinks and light meals. Calangute Beach is only 0.8 miles from Hard Rock Hotel Goa, while the airport is approximately 23 miles to the south.",
+        "website":"https://www.hardrockhotels.com/goa/",
+        "contact":"+91-832-674-5555",
+        "email":"reservations@hrhgoa.com",
+        "type":"5-star",
+        "rating": {
+            "food": 3.9,
+            "rooms": 3.9,
+            "service": 4.5,
+            "facilities" : 4.5,
+            "cleanliness" : 4.7,
+            "value_for_money" : 4
+        },
+        "room_types" : {
+            "Deluxe Room King Bed - Breakfast" : ["FREE Breakfast, Accommodation, 1024 sq. ft.",5474],
+            "Deluxe Room King Bed - 2 Meals" : ["FREE Breakfast and Dinner, Accommodation, 1024 sq. ft.",6642],
+            "Deluxe Room Twin Bed" : ["Deluxe Room Twin Bed, FREE Breakfast, Accommodation, 256 sq. ft.", 5474],
+            "Deluxe Room - 2 Meals" : ["Deluxe Room Twin Bed, FREE Breakfast and Dinner, Accommodation, 256 sq. ft",  6642]
+        }
+    }
+]
