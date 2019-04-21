@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="col-md-4">
+       <form role="form">
+          <div class="input-group">
+             <input type="text" #hotelname (keyup)="sendHotelName(hotelname.value)"
+             class="form-control input-sm" placeholder="Enter Hotel Name">
+             <span class="input-group-btn">
+             <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span></button>
+             </span>
+          </div>
+       </form>
+    </div>
+    <div class="col-md-4">
+       <div class="form-group">
+         <!-- <span class="	glyphicon glyphicon-sort"></span> -->
+          <button class="btn btn-md btn-primary">
+             <select class="form-control" [(ngModel)]="sortBy" (ngModelChange)="onSortByChanged($event)">
+             <option>None</option>
+             <option>Rating</option>
+             <option>Price</option>
+             </select>
+          </button>
+       </div>
+       <div class="form-group">
+          <button class="btn btn-md btn-primary">
+             <select class="form-control" [disabled]="sortOptionsDisabled" [(ngModel)]="sortOption" (ngModelChange)="onSortOptionChanged($event)">
+             <option>Low-High</option>
+             <option>High-Low</option>
+             </select>
+          </button>
+       </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <button class="btn btn-md btn-primary">
+               <select class="form-control" [(ngModel)]="filter" (ngModelChange)="onFilterChanged($event)">
+               <option>None</option>
+               <option>Hotel Type</option>
+               <option>Price Range</option>
+               </select>
+            </button>
+         </div>
+         <div *ngIf="isTypeFilter">
+            <button class="btn btn-md btn-primary">
+                <select class="form-control" [(ngModel)]="selectedHotelType" (ngModelChange)="onHotelTypeChanged($event)">
+                <option>5-star</option>
+                <option>4-star</option>
+                <option>3-star</option>
+                <option>Normal</option>
+                <option>All</option>
+                </select>
+             </button>
+         </div>
+         <div *ngIf="isPriceFilter">
+            <form role="form">
+                <div class="input-group">
+                    <h6>Enter Price Range: </h6>
+                    <input type="text" #min id="min" class="form-control priceinput" placeholder="Min" (keyup)="onMinPriceChanged(min.value)"> <input type="text" #max id="max" class="form-control priceinput" placeholder="Max" (keyup)="onMaxPriceChanged(max.value)">
+                </div>
+                <p *ngIf="displayError" style="color:red;">Minimum price should be less than Maximum Price</p>
+             </form>
+         </div>
+    </div>
+ </div>

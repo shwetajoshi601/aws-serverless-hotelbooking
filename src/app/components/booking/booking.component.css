@@ -1,0 +1,36 @@
+.maindiv {
+    margin-top: 50px;
+}
+
+.titles {
+    font-size: 12px;
+    color: #191970;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.detail {
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.table-borderless {
+    border: 0;
+    margin-top: 10px;
+}
+
+.has-danger {
+    border: 1px solid red;
+    border-radius: 1px;
+}
+
+.has-success {
+    border: 1px solid green;
+    border-radius: 1px;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,141 @@
+<div class="container maindiv">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 style="color:dimgray; margin-bottom:20px; text-align:left;"> Verify Booking Details </h3>
+            <!-- <h4 style="color:darkblue; margin-bottom:20px; text-align:left;"> Hotel Name:</h4>  {{booking_details.hotel_name}} -->
+            <!--<img src="../../assets/images/hotels/{{booking_details.hotel_id}}/main2.jpg" style="height: 200px; width:300px;"> -->&nbsp; &nbsp;
+            <table class="table table-borderless">
+                <tr>
+                    <td class="titles">Hotel Name: </td>
+                    <td class="detail"> {{booking_details.hotel_name}}</td>
+                </tr>
+                <tr>
+                    <td class="titles">Hotel Address : </td>
+                    <td class="detail"> {{booking_details.hotel_address.detail}}, {{booking_details.hotel_address.city}}, {{booking_details.hotel_address.state}},
+                        {{booking_details.hotel_address.zipcode}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titles">Check In Date : </td>
+                    <td class="detail"> {{booking_details.check_in | date:'longDate'}}</td>
+                </tr>
+                <tr>
+                    <td class="titles">Check Out Date : </td>
+                    <td class="detail"> {{booking_details.check_out | date:'longDate'}}</td>
+                </tr>
+                <tr>
+                    <td class="titles">No. of Adults: </td>
+                    <td class="detail"> {{booking_details.no_adults}}</td>
+                </tr>
+                <tr>
+                    <td class="titles">No. of Children: </td>
+                    <td class="detail"> {{booking_details.no_children}}</td>
+                </tr>
+            </table>
+            <h3 style="color:dimgray; margin-bottom:20px; text-align:left;">Room Details </h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" style="height:200px; font-size:12px;">
+                    <thead>
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Room Name</th>
+                            <th>No. of Rooms</th>
+                            <th>Price/room per night</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let room of room_types; let i=index">
+                            <td>{{i+1}}</td>
+                            <td>{{room}}</td>
+                            <td>{{booking_details.room_info[room].no}}</td>
+                            <td>{{booking_details.room_info[room].price_per_night}}</td>
+                            <td>{{booking_details.room_info[room].total}}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th>TOTAL(Room charges * No. of Days)</th>
+                            <th>{{booking_details.total_price_for_room}}</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th>GST 10%</th>
+                            <th>{{booking_details.tax | number:'0.0-2'}}</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th>TOTAL (Room Booking + Tax)</th>
+                            <th>{{booking_details.total_with_tax | number:'0.0-2'}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3 style="color:dimgray; margin-bottom:20px; text-align:left;"> Enter your Details </h3>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+                <label class="titles">First Name</label>
+                <div class="form-group" [ngClass]="{
+                    'has-danger': firstname.invalid && firstname.dirty, 
+                    'has-success': firstname.valid && firstname.dirty 
+                  }">
+                    <input type="text" class="form-control" formControlName="firstname">
+                </div>
+                <div *ngIf="firstname.errors && (firstname.dirty || firstname.touched)">
+                    <p *ngIf="firstname.errors.required" class="error">First Name is required</p>
+                    <p *ngIf="firstname.errors.invalid" class="error">First Name is invalid</p>
+                </div>
+
+                <label class="titles">Last Name</label>
+                <div class="form-group" [ngClass]="{
+                    'has-danger': lastname.invalid && lastname.dirty, 
+                    'has-success': lastname.valid && lastname.dirty 
+                  }">
+                    <input type="text" class="form-control" formControlName="lastname">
+                </div>
+                <div *ngIf="lastname.errors && (lastname.dirty || lastname.touched)">
+                    <p *ngIf="lastname.errors.required" class="error">Last Name is required</p>
+                    <p *ngIf="lastname.errors.invalid" class="error">Last Name is invalid</p>
+                </div>
+
+                <label class="titles">Email</label>
+                <div class="form-group" [ngClass]="{
+                    'has-danger': userForm.controls.email.invalid && userForm.controls.email.dirty, 
+                    'has-success': userForm.controls.email.valid && userForm.controls.email.dirty 
+                  }">
+                    <input type="email" class="form-control" formControlName="email">
+                </div>
+                <div *ngIf="email.errors && (email.dirty || email.touched)">
+                    <p *ngIf="email.errors.required" class="error">Email is required</p>
+                    <p *ngIf="email.errors.invalid" class="error">Email is invalid</p>
+                </div>
+
+                <label class="titles">Contact</label>
+                <div class="form-group" [ngClass]="{
+                    'has-danger': contact.invalid && contact.dirty, 
+                    'has-success': contact.valid && contact.dirty 
+                  }">
+                    <input type="number" class="form-control" formControlName="contact">
+                </div>
+                <div *ngIf="contact.errors && (contact.dirty || contact.touched)">
+                    <p *ngIf="contact.errors.required" class="error">Contact is required</p>
+                    <p *ngIf="contact.errors.invalid" class="error">Contact is invalid</p>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="titles">Comments</label>
+                    <textarea class="form-control" row="5" formControlName="comments"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-md">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+</div>
